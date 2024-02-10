@@ -9,7 +9,11 @@
         android:id="@+id/fragment_overview"/>
 
     <fragment
-        android:name="kambo.klodian.presentation.TransactionsFragment"
+        android:name="kambo.klodian.presentation.transactions.TransactionsFragment"
         android:id="@+id/fragment_transactions"/>
+
+    <fragment
+        android:name="kambo.klodian.presentation.transactiondetail.TransactionDetailFragment"
+        android:id="@+id/fragment_transaction_detail"/>
 
 </navigation>
