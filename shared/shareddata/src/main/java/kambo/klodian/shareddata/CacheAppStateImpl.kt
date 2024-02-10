@@ -1,7 +1,7 @@
 package kambo.klodian.shareddata
 
 import kambo.klodian.shareddomain.entities.AppState
-import kambo.klodian.shareddomain.interfaces.CacheAppStateDataSource
+import kambo.klodian.shareddomain.datasource.CacheAppStateDataSource
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
 import javax.inject.Inject

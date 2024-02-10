@@ -1,6 +1,6 @@
 package kambo.klodian.shareddomain
 
-import kambo.klodian.shareddomain.interfaces.CacheAppStateDataSource
+import kambo.klodian.shareddomain.datasource.CacheAppStateDataSource
 import javax.inject.Inject
 
 class GetAppStateUpdatesUseCase @Inject constructor(

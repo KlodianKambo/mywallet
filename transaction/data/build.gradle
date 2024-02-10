@@ -11,7 +11,7 @@ android {
     compileSdk 34
 
     defaultConfig {
-        minSdkVersion 21
+        minSdkVersion 26
         targetSdkVersion 33
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -40,6 +40,7 @@ dependencies {
 
     implementation libs.main.kotlin
     implementation 'com.google.android.gms:play-services-location:19.0.1'
+    implementation project(':shared:shareddomain')
 
     // TEST
     testImplementation 'junit:junit:4.13.2'

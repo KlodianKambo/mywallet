@@ -28,9 +28,11 @@ class HomeActivity : AppCompatActivity(R.layout.activity_home){
     }
 
     private fun navigateTo(appState: AppState){
+
         val navId = when(appState){
             AppState.Overview -> R.id.fragment_overview
             AppState.Transactions -> R.id.fragment_transactions
+            is AppState.TransactionDetails -> R.id.fragment_transaction_detail
         }
 
         navController.navigate(navId)

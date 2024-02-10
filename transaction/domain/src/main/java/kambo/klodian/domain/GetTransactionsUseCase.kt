@@ -1,6 +1,5 @@
 package kambo.klodian.domain
 
-import kambo.klodian.domain.datasource.RemoteTransactionDataSource
 import javax.inject.Inject
 
 
@@ -14,3 +13,4 @@ internal class GetTransactionsUseCaseImpl @Inject constructor(
         return remoteTransactionDataSource.getTransactions()
     }
 }
+

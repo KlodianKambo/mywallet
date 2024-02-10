@@ -5,13 +5,12 @@ import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import kambo.klodian.data.RemoteTransactionDataSourceImpl
-import kambo.klodian.domain.datasource.RemoteTransactionDataSource
+import kambo.klodian.domain.RemoteTransactionDataSource
 
 @Module
 @InstallIn(SingletonComponent::class)
 class TransactionDataModule {
 
     @Provides
-    fun provideRemoteTransactionDataSource(impl: RemoteTransactionDataSourceImpl): RemoteTransactionDataSource =
-        impl
+    fun provideRemoteTransactionDataSource(impl: RemoteTransactionDataSourceImpl): RemoteTransactionDataSource = impl
 }
